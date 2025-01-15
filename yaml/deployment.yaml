@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: b19-backend-app
+  labels:
+    app: b19-backend-app
+spec:
+  selector:
+    matchLabels:
+      app: b19-backend-app
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: b19-backend-app
+    spec:
+      containers:
+        - name: b19-backend-app
+          image: shubhamkalsait1/b19-backend:latest
+          ports:
+            - containerPort: 8080
