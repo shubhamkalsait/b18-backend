@@ -70,3 +70,9 @@ EXPOSE 8080
 # Command to run the application
 CMD ["java", "-jar", "target/spring-backend-v1.jar"]
 ```
+
+DB_HOST: terraform-20250115121533005300000004.cfi8yq6g8rpc.ap-southeast-1.rds.amazonaws.com
+DB_PORT: 3306
+DB_NAME: springbackend
+DB_USER: admin
+DB_PASS: Redhat123
